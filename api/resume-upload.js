@@ -56,6 +56,7 @@ module.exports = async (req, res) => {
         access: 'public',
         contentType: 'application/pdf',
         allowOverwrite: true,
+        addRandomSuffix: false,
       });
       url = blob.url;
     } else {
